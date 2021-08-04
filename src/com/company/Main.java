@@ -1,5 +1,4 @@
 package com.company;
-
 import java.util.Scanner;
 
 public class Main {
@@ -32,10 +31,7 @@ public class Main {
 					}
 					tries++;
 				}
-
-
 			}
-
 		}
 		if (tries == 9) {
 			System.out.println("Sie haben verloren.");
