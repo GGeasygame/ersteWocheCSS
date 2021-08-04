@@ -15,17 +15,17 @@ public class Main {
 
 			if (tries < 10) {
 				int left = 9 - tries;
-				System.out.println("Du hast " + left + "Versuche verbleibend");
+				System.out.println("Du hast " + left + " Versuche verbleibend");
 				for (int t = 0; t <= 2; t++) {
 					System.out.println("Versuchen Sie die Zahl herauszufinden.");
 					Scanner scanner = new Scanner(System.in);
-					int versuch = scanner.nextInt();
-					System.out.println(versuch);
-					if (versuch == number) {
+					int guess = scanner.nextInt();
+					System.out.println(guess);
+					if (guess == number) {
 						System.out.println("Du hast es geschafft!");
 						tries = 10;
 						t = 3;
-					} else if (versuch > number) {
+					} else if (guess > number) {
 						System.out.println("Die gesuchte Zahl ist kleiner.");
 					} else {
 						System.out.println("Die gesuchte Zahl ist grösser.");
